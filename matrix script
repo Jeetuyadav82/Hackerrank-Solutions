@@ -1,0 +1,49 @@
+#1st  using set
+'''
+a,b=map(int,input().split(' '))
+l={}
+for k in range(b):
+    l[k]=''
+for i in range(a):
+    s=input()
+    for j in range(len(s)):
+        l[j]+=s[j]   
+o=''
+for d in l.values():
+    o+=d
+print(o)'''
+#2nd using zip
+import re'
+
+n, m = map(int, input().split())
+a, b = [], ""
+for _ in range(n):
+    a.append(input())
+print(*a)
+for z in zip(*a):
+    b += "".join(z)
+    print(z)
+print(b)
+
+#3rd usingstring
+'''
+a,b=map(int,input().split(' '))
+l=[]
+p=''
+for i in range(a):
+    p+=input()
+s=''
+l=list(p)
+q=0
+for i in range(len(l)):
+    for j in range(i,len(l)-2,b):
+        s+=l[j]
+        if len(s)==len(l)-1:
+            q=1
+            break
+    if q==1:
+        break
+print(s+l[len(l)-1])'''
+
+
+    
