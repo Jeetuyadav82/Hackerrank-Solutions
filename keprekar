@@ -1,0 +1,14 @@
+p=int(input())
+q=int(input())
+l=0
+r=0
+for i in range(p,q+1):
+    sqr=i**2
+    sqrl=str(sqr)
+    n=len(sqrl)
+    l,r=sqrl[:n//2],sqrl[n//2:]
+    print(l)
+    print(r)
+    if int(l)+int(r)==i:
+        print(i)
+        
