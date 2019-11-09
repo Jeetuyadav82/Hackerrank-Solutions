@@ -1,0 +1,12 @@
+for i in range(int(input())):
+    a=input()
+    l=[]
+    for j in range(len(a)):
+        for k in range(j+1,len(a)+1):
+            p=a[j:k]
+            l.append(p)
+    l=list(set(l))
+    x=0
+    for g in l:
+        x+=(len(g)**(len(set(g))))%1000000007
+    print(x%1000000007)
