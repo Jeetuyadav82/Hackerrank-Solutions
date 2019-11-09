@@ -1,0 +1,25 @@
+for i in range(int(input())):
+    x=input()
+    s=''
+    t=0
+    for j in range(len(x)//2):
+        s=x[0:j+1]
+        y=int(s)
+        k=y
+        s1=''
+        s1+=str(y)
+        t=0
+        while(len(s1)<len(x)):
+            y+=1
+            s1+=str(y)
+            if s1==x:
+                print('YES',k)
+                t=1
+                break
+        if t==1:
+            break
+    if t==0:
+        print('NO')
+
+            
+        
